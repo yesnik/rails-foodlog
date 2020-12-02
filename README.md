@@ -11,7 +11,7 @@ Features:
 
 ## Installation
 
-1. Ensure that you have `ruby` and `bundler` on your PC:
+1. Ensure that you have `ruby`, `bundler`, `yarn` at your PC:
 
 ```bash
 ruby -v
@@ -19,6 +19,9 @@ ruby -v
 
 bundle -v
 #=> Bundler version 2.1.4
+
+yarn -v
+#=> 1.22.5
 ```
 
 2. Clone this project:
@@ -31,16 +34,23 @@ git clone git@github.com:yesnik/rails-foodlog.git
 
 ```bash
 cd rails-foodlog
+yarn install
 bundle install
 ```
 
-4. Run development server:
+4. Run migrations:
+
+```bash
+rails db:migrate
+```
+
+5. Run development server:
 
 ```bash
 rails s
 ```
 
-5. Visit site http://127.0.0.1:3000
+6. Visit site http://127.0.0.1:3000
 
 ## Links
 
