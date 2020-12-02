@@ -1,5 +1,5 @@
 <% content_for :title do %>
-  <%= @entry.meal_type %> &ndash; <%= DateTime.new.to_s(:nice_date) %>
+  <%= @entry.meal_type %> &ndash; <%= @entry.created_at.to_s(:nice_date) %>
 <% end %>
 
 <div class="columns mt-6 is-centered">
