@@ -1,24 +1,47 @@
-# README
+# Rails Foodlog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 6 project about nutrition information of our food. 
+This project uses [Bulma](https://bulma.io/) CSS framework.
 
-Things you may want to cover:
+Features:
 
-* Ruby version
+- We can see entries grouped by date
+- We can create, edit, update, delete entries and categories
+- We can assign category to entry
 
-* System dependencies
+## Installation
 
-* Configuration
+1. Ensure that you have `ruby` and `bundler` on your PC:
 
-* Database creation
+```bash
+ruby -v
+#=> ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-linux]
 
-* Database initialization
+bundle -v
+#=> Bundler version 2.1.4
+```
 
-* How to run the test suite
+2. Clone this project:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+git clone git@github.com:yesnik/rails-foodlog.git
+```
 
-* Deployment instructions
+3. Install dependencies:
 
-* ...
+```bash
+cd rails-foodlog
+bundle install
+```
+
+4. Run development server:
+
+```bash
+rails s
+```
+
+5. Visit site http://127.0.0.1:3000
+
+## Links
+
+This project was created with YouTube Tutorial: [Ruby On Rails Crash Course 2020](https://www.youtube.com/watch?v=B3Fbujmgo60).
